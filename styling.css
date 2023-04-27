@@ -22,8 +22,15 @@ body {
     align-items: stretch;
     width: 30%;
     background-color: rgba(0, 0, 0, 0.05);
-    padding: 0 15px 0;
+    padding: 0 20px 0;
     gap: 10vh;
+    overflow-y: auto;
+}
+
+@media (max-width: 700px) {
+    .sidenav {
+        display: none;
+    }
 }
 
 .sidenav-group {
@@ -51,22 +58,72 @@ body {
     font-size: 1rem;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.05);
-    padding: 10px;
+    padding: 15px;
 }
 
 .sidenav-nav:hover {
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-.sidenav-nav-current {
-    
-}
-
 .sidenav-nav:active {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 35px;
+    gap: 35px;
 }
 
 .god {
     width: 100%;
     overflow: hidden;
+}
+
+.big {
+    font-size: 3rem;
+    margin: 0 35px;
+    font-weight: bold;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.px-2 {
+    padding: 0 20px;
+}
+
+table, th, td {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table {
+    margin: 15px;
+}
+
+thead tr th {
+    border-bottom: 2px solid hsl(0, 0%, 50%);
+}
+
+thead tr th:first-child, tbody tr th {
+    border-right: 2px solid hsl(0, 0%, 50%);
+}
+
+tbody tr:not(:last-child) th, tbody tr:not(:last-child) td {
+    border-bottom: 2px solid hsl(0, 0%, 80%);
+}
+
+.class-teacher {
+    margin-top: 1px;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 75%);
 }
