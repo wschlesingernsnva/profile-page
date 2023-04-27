@@ -66,24 +66,7 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
-} */
-
 .god {
     width: 100%;
     overflow: hidden;
 }
-
-/* .big {
-    font-size: 5rem;
-    margin: 0 35px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-} */
